@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Drop : MonoBehaviour
 {
+    [SerializeField] private DialogueSystem dialogue;
+    [SerializeField] private Animator animator;
     public GameObject sceneObjects;
 
     private int numOfObject;
@@ -22,6 +24,8 @@ public class Drop : MonoBehaviour
         {
             Debug.Log("Bravo esti");
             // Load next scene or display dialogue
+            animator.Play("Anim_MomoStudyComplete");
+            dialogue.InitializeDialogue();
         }
     }
 }

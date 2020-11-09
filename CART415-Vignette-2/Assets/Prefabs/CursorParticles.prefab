@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 544967646997826733}
   - component: {fileID: 544967646997826734}
   - component: {fileID: 1306851013}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CursorParticles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -70,7 +70,7 @@ GameObject:
   - component: {fileID: 544967647265185118}
   - component: {fileID: 544967647265185187}
   - component: {fileID: 544967647265185116}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Floof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4891,7 +4891,7 @@ GameObject:
   - component: {fileID: 544967649052774293}
   - component: {fileID: 544967649052774294}
   - component: {fileID: 544967649052774295}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Sparkly
   m_TagString: Untagged
   m_Icon: {fileID: 0}

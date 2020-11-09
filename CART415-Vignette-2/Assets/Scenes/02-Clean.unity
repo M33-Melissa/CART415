@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 86952620}
   - component: {fileID: 86952621}
   - component: {fileID: 86952622}
+  - component: {fileID: 86952623}
   m_Layer: 0
   m_Name: eyes5
   m_TagString: Untagged
@@ -243,8 +244,21 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.83, y: 0.44}
+  m_Size: {x: 1.07, y: 0.84}
   m_EdgeRadius: 0
+--- !u!114 &86952623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 86952618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f981c88fd2a0fc41bf0502597fa2abb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  closedSprite: {fileID: 21300000, guid: 04730dcc7e46cc44b894a5dd7b2a619f, type: 3}
 --- !u!1 &181907104
 GameObject:
   m_ObjectHideFlags: 0
@@ -339,6 +353,7 @@ GameObject:
   - component: {fileID: 360232397}
   - component: {fileID: 360232398}
   - component: {fileID: 360232399}
+  - component: {fileID: 360232400}
   m_Layer: 0
   m_Name: eyes7
   m_TagString: Untagged
@@ -447,8 +462,21 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.24, y: 0.65}
+  m_Size: {x: 1.57, y: 1.1}
   m_EdgeRadius: 0
+--- !u!114 &360232400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 360232395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f981c88fd2a0fc41bf0502597fa2abb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  closedSprite: {fileID: 21300000, guid: 3b27060a2982e514ba16f7cc9cdee0cc, type: 3}
 --- !u!1 &393391458
 GameObject:
   m_ObjectHideFlags: 0
@@ -461,6 +489,7 @@ GameObject:
   - component: {fileID: 393391460}
   - component: {fileID: 393391461}
   - component: {fileID: 393391462}
+  - component: {fileID: 393391463}
   m_Layer: 0
   m_Name: eyes4
   m_TagString: Untagged
@@ -569,8 +598,177 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.13, y: 0.66}
+  m_Size: {x: 1.59, y: 1.06}
   m_EdgeRadius: 0
+--- !u!114 &393391463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 393391458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f981c88fd2a0fc41bf0502597fa2abb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  closedSprite: {fileID: 21300000, guid: 7fe26a3a40cede74fadddbec6172d255, type: 3}
+--- !u!1001 &1020333960
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1590284499276165522, guid: bc189d97aef3ef347aae53fdff65a3af, type: 3}
+      propertyPath: m_Name
+      value: DialogueCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 1590284499276165522, guid: bc189d97aef3ef347aae53fdff65a3af, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1590284499276165525, guid: bc189d97aef3ef347aae53fdff65a3af, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 2053767003}
+    - target: {fileID: 1590284499276165526, guid: bc189d97aef3ef347aae53fdff65a3af, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1590284499276165526, guid: bc189d97aef3ef347aae53fdff65a3af, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1590284499276165526, guid: bc189d97aef3ef347aae53fdff65a3af, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1590284499276165526, guid: bc189d97aef3ef347aae53fdff65a3af, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1590284499276165526, guid: bc189d97aef3ef347aae53fdff65a3af, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1590284499276165526, guid: bc189d97aef3ef347aae53fdff65a3af, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1590284499276165526, guid: bc189d97aef3ef347aae53fdff65a3af, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1590284499276165526, guid: bc189d97aef3ef347aae53fdff65a3af, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1590284499276165526, guid: bc189d97aef3ef347aae53fdff65a3af, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1590284499276165526, guid: bc189d97aef3ef347aae53fdff65a3af, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1590284499276165526, guid: bc189d97aef3ef347aae53fdff65a3af, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1590284499276165526, guid: bc189d97aef3ef347aae53fdff65a3af, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1590284499276165526, guid: bc189d97aef3ef347aae53fdff65a3af, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1590284499276165526, guid: bc189d97aef3ef347aae53fdff65a3af, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1590284499276165526, guid: bc189d97aef3ef347aae53fdff65a3af, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1590284499276165526, guid: bc189d97aef3ef347aae53fdff65a3af, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1590284499276165526, guid: bc189d97aef3ef347aae53fdff65a3af, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1590284499276165526, guid: bc189d97aef3ef347aae53fdff65a3af, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1590284499276165526, guid: bc189d97aef3ef347aae53fdff65a3af, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1590284499276165526, guid: bc189d97aef3ef347aae53fdff65a3af, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1590284499276165526, guid: bc189d97aef3ef347aae53fdff65a3af, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1590284499440028314, guid: bc189d97aef3ef347aae53fdff65a3af, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8809647955186208941, guid: bc189d97aef3ef347aae53fdff65a3af, type: 3}
+      propertyPath: DialogueList.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8809647955186208941, guid: bc189d97aef3ef347aae53fdff65a3af, type: 3}
+      propertyPath: DialogueList.Array.data[2].Person
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8809647955186208941, guid: bc189d97aef3ef347aae53fdff65a3af, type: 3}
+      propertyPath: DialogueList.Array.data[1].Person
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8809647955186208941, guid: bc189d97aef3ef347aae53fdff65a3af, type: 3}
+      propertyPath: nextScene
+      value: 03-Study
+      objectReference: {fileID: 0}
+    - target: {fileID: 8809647955186208941, guid: bc189d97aef3ef347aae53fdff65a3af, type: 3}
+      propertyPath: DialogueList.Array.data[0].Dialogue
+      value: EVIL BEGONE! Nice work me! Now it's time to study...
+      objectReference: {fileID: 0}
+    - target: {fileID: 8809647955186208941, guid: bc189d97aef3ef347aae53fdff65a3af, type: 3}
+      propertyPath: DialogueList.Array.data[1].Dialogue
+      value: I never remember anything I study... What am I going to do? Maybe...
+      objectReference: {fileID: 0}
+    - target: {fileID: 8809647955186208941, guid: bc189d97aef3ef347aae53fdff65a3af, type: 3}
+      propertyPath: DialogueList.Array.data[2].Dialogue
+      value: Like mama always says, studying provides "food for thought"...
+      objectReference: {fileID: 0}
+    - target: {fileID: 8809647955186208941, guid: bc189d97aef3ef347aae53fdff65a3af, type: 3}
+      propertyPath: DialogueList.Array.data[3].Dialogue
+      value: Then... I just have to put food into my mind!
+      objectReference: {fileID: 0}
+    - target: {fileID: 8809647955186208941, guid: bc189d97aef3ef347aae53fdff65a3af, type: 3}
+      propertyPath: DialogueList.Array.data[4].Dialogue
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bc189d97aef3ef347aae53fdff65a3af, type: 3}
+--- !u!114 &1020333961 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8809647955186208941, guid: bc189d97aef3ef347aae53fdff65a3af, type: 3}
+  m_PrefabInstance: {fileID: 1020333960}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad04b301376d5f046b19f21210ebc7b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1078656154
 GameObject:
   m_ObjectHideFlags: 0
@@ -626,6 +824,7 @@ GameObject:
   - component: {fileID: 1103462737}
   - component: {fileID: 1103462736}
   - component: {fileID: 1103462735}
+  - component: {fileID: 1103462738}
   m_Layer: 0
   m_Name: eyes8
   m_TagString: Untagged
@@ -671,7 +870,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.74, y: 0.44}
+  m_Size: {x: 1.22, y: 0.83}
   m_EdgeRadius: 0
 --- !u!114 &1103462736
 MonoBehaviour:
@@ -736,6 +935,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1103462738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1103462733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f981c88fd2a0fc41bf0502597fa2abb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  closedSprite: {fileID: 21300000, guid: 2cacab9906177124e9ab31bfb6fe6026, type: 3}
 --- !u!1 &1431751107
 GameObject:
   m_ObjectHideFlags: 0
@@ -748,6 +960,7 @@ GameObject:
   - component: {fileID: 1431751109}
   - component: {fileID: 1431751110}
   - component: {fileID: 1431751111}
+  - component: {fileID: 1431751112}
   m_Layer: 0
   m_Name: eyes1
   m_TagString: Untagged
@@ -856,8 +1069,21 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.52, y: 0.27}
+  m_Size: {x: 1.11, y: 0.6}
   m_EdgeRadius: 0
+--- !u!114 &1431751112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1431751107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f981c88fd2a0fc41bf0502597fa2abb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  closedSprite: {fileID: 21300000, guid: 4592d70fbfc794b478401c69d9a68995, type: 3}
 --- !u!1 &1533616508
 GameObject:
   m_ObjectHideFlags: 0
@@ -870,6 +1096,7 @@ GameObject:
   - component: {fileID: 1533616510}
   - component: {fileID: 1533616511}
   - component: {fileID: 1533616512}
+  - component: {fileID: 1533616513}
   m_Layer: 0
   m_Name: eyes6
   m_TagString: Untagged
@@ -978,8 +1205,21 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.26, y: 0.51}
+  m_Size: {x: 1.79, y: 1.23}
   m_EdgeRadius: 0
+--- !u!114 &1533616513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1533616508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f981c88fd2a0fc41bf0502597fa2abb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  closedSprite: {fileID: 21300000, guid: 6dcf57c8a796bb9419cc1f1a114f8a2a, type: 3}
 --- !u!1 &1596760691
 GameObject:
   m_ObjectHideFlags: 0
@@ -1031,6 +1271,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60ec6e9d938d4fe4e875632036e382c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialogue: {fileID: 1020333961}
 --- !u!1 &1634119166
 GameObject:
   m_ObjectHideFlags: 0
@@ -1043,6 +1284,7 @@ GameObject:
   - component: {fileID: 1634119168}
   - component: {fileID: 1634119169}
   - component: {fileID: 1634119170}
+  - component: {fileID: 1634119171}
   m_Layer: 0
   m_Name: eyes2
   m_TagString: Untagged
@@ -1151,8 +1393,21 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.74, y: 0.44}
+  m_Size: {x: 1.18, y: 0.78}
   m_EdgeRadius: 0
+--- !u!114 &1634119171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1634119166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f981c88fd2a0fc41bf0502597fa2abb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  closedSprite: {fileID: 21300000, guid: 2cacab9906177124e9ab31bfb6fe6026, type: 3}
 --- !u!1001 &1879045008
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1222,6 +1477,7 @@ GameObject:
   - component: {fileID: 1981353110}
   - component: {fileID: 1981353111}
   - component: {fileID: 1981353112}
+  - component: {fileID: 1981353113}
   m_Layer: 0
   m_Name: eyes3
   m_TagString: Untagged
@@ -1330,8 +1586,21 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.9, y: 0.55}
+  m_Size: {x: 1.26, y: 0.79}
   m_EdgeRadius: 0
+--- !u!114 &1981353113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1981353108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f981c88fd2a0fc41bf0502597fa2abb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  closedSprite: {fileID: 21300000, guid: d69a5035a617ba740b9eb3b099ef26ae, type: 3}
 --- !u!1 &2053767001
 GameObject:
   m_ObjectHideFlags: 0

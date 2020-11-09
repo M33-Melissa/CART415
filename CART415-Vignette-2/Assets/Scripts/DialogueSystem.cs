@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public enum Person
 {
@@ -13,7 +14,7 @@ public enum Person
 public class PersonDialogue
 {
     public Person Person;
-    public string Dialogue;
+    [TextArea] public string Dialogue;
 }
 
 public class DialogueSystem : MonoBehaviour
@@ -27,7 +28,7 @@ public class DialogueSystem : MonoBehaviour
     private bool isDoneDisplaying = false;
     private PersonDialogue currentPersonDialogue;
     private Dialogue currentDialogue;
-    private bool isInitialized = false;
+    public bool isInitialized = false;
 
     private void Start()
     {
@@ -43,9 +44,13 @@ public class DialogueSystem : MonoBehaviour
         {
             if (dialogQueue.Count == 0)
             {
-                // Load next scene?
                 DisableDialogues();
-                Debug.Log("Done with dialogues");
+                int nextScene = SceneManager.GetActiveScene().buildIndex + 1;
+                if (nextScene >= SceneManager.sceneCountInBuildSettings)
+                {
+                    nextScene = 0;
+                }
+                SceneManager.LoadScene(nextScene);
                 return;
             }
             StopAllCoroutines();

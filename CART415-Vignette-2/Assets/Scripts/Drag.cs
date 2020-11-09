@@ -2,7 +2,35 @@
 
 public class Drag : MonoBehaviour
 {
-    Vector3 screenPoint;
+    private Sprite scienceSprite;
+    [SerializeField] private Sprite candySprite;
+    
+    private Animator shakeAnimator;
+    private Vector3 screenPoint;
+    private SpriteRenderer renderer;
+
+
+    private void Start()
+    {
+        renderer = GetComponent<SpriteRenderer>();
+        shakeAnimator = GetComponent<Animator>();
+        scienceSprite = renderer.sprite;
+    }
+
+    private void OnMouseEnter()
+    {
+        shakeAnimator.SetBool("IsShaking", true);
+    }
+
+
+    private void OnMouseDown()
+    {
+        if (candySprite == null)
+        {
+            return;
+        }
+        renderer.sprite = candySprite;
+    }
 
     public void OnMouseDrag()
     {
@@ -12,6 +40,8 @@ public class Drag : MonoBehaviour
 
     private void OnMouseUp()
     {
+        shakeAnimator.SetBool("IsShaking", false);
+
         Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         RaycastHit2D[] hits = Physics2D.RaycastAll(mousePosition, new Vector2(0, 0), 0.01f);
 
@@ -20,6 +50,7 @@ public class Drag : MonoBehaviour
             Drop drop = hit.transform.GetComponent<Drop>();
             if (drop == null)
             {
+                renderer.sprite = scienceSprite;
                 return;
             }
             drop.SelectionUp(gameObject);

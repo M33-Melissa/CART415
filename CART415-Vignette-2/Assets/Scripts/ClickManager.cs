@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ClickManager : MonoBehaviour
 {
+    [SerializeField] private DialogueSystem dialogue;
     private int numOfMonsters;
 
     private void Start()
@@ -20,6 +21,7 @@ public class ClickManager : MonoBehaviour
         {
             Debug.Log("Bravo esti");
             // Load next scene or display dialogue
+            dialogue.InitializeDialogue();
         }
     }
 }
