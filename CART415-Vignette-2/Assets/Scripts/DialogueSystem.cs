@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
+using UnityEngine.Events;
 
 public enum Person
 {
@@ -15,16 +15,18 @@ public class PersonDialogue
 {
     public Person Person;
     [TextArea] public string Dialogue;
+    public UnityEvent dialogueEvent;
 }
 
 public class DialogueSystem : MonoBehaviour
 {
+    public Animator fadeAnimator;
     public Dialogue MamaDialogue;
     public Dialogue MomoDialogue;
     public List<PersonDialogue> DialogueList;
 
     private Queue<PersonDialogue> dialogQueue;
-    private float letterDisplaySpeed = 0.05f;
+    private float letterDisplaySpeed = 0.03f;
     private bool isDoneDisplaying = false;
     private PersonDialogue currentPersonDialogue;
     private Dialogue currentDialogue;
@@ -42,15 +44,9 @@ public class DialogueSystem : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0) && isInitialized)
         {
-            if (dialogQueue.Count == 0)
+            if (dialogQueue.Count == 0 && isDoneDisplaying)
             {
-                DisableDialogues();
-                int nextScene = SceneManager.GetActiveScene().buildIndex + 1;
-                if (nextScene >= SceneManager.sceneCountInBuildSettings)
-                {
-                    nextScene = 0;
-                }
-                SceneManager.LoadScene(nextScene);
+                fadeAnimator.SetTrigger("FadeOut");
                 return;
             }
             StopAllCoroutines();
@@ -87,6 +83,7 @@ public class DialogueSystem : MonoBehaviour
     {
         currentPersonDialogue = dialogQueue.Dequeue();
         currentDialogue = EnableDialogue(currentPersonDialogue.Person);
+        currentPersonDialogue.dialogueEvent?.Invoke();
 
         StartCoroutine(UpdateText(currentDialogue, currentPersonDialogue.Dialogue));
     }

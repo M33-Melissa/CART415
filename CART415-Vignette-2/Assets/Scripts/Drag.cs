@@ -19,7 +19,7 @@ public class Drag : MonoBehaviour
 
     private void OnMouseEnter()
     {
-        shakeAnimator.SetBool("IsShaking", true);
+        shakeAnimator.SetTrigger("Shake");
     }
 
 
@@ -40,8 +40,6 @@ public class Drag : MonoBehaviour
 
     private void OnMouseUp()
     {
-        shakeAnimator.SetBool("IsShaking", false);
-
         Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         RaycastHit2D[] hits = Physics2D.RaycastAll(mousePosition, new Vector2(0, 0), 0.01f);
 

@@ -6,6 +6,8 @@ public class ClickManager : MonoBehaviour
 {
     [SerializeField] private DialogueSystem dialogue;
     private int numOfMonsters;
+    private int numClicks = 0;
+    private int waitTime = 2;
 
     private void Start()
     {
@@ -14,14 +16,27 @@ public class ClickManager : MonoBehaviour
 
     public void mouseDown(GameObject clickedObject)
     {
-        Destroy(clickedObject);
+        StartCoroutine(HideEye(clickedObject));
+        numClicks++;
+    }
 
-        numOfMonsters--;
+    private void CheckForVictory()
+    {
         if (numOfMonsters <= 0)
         {
-            Debug.Log("Bravo esti");
-            // Load next scene or display dialogue
             dialogue.InitializeDialogue();
+            StopAllCoroutines();
         }
+    }
+    private IEnumerator HideEye(GameObject eye)
+    {
+        eye.SetActive(false);
+        numOfMonsters--;
+        CheckForVictory();
+        waitTime += numClicks / 2;
+        yield return new WaitForSeconds(waitTime);
+
+        eye.SetActive(true);
+        numOfMonsters++;
     }
 }
