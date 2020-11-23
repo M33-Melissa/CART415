@@ -6,6 +6,7 @@ public class Drop : MonoBehaviour
 {
     [SerializeField] private DialogueSystem dialogue;
     [SerializeField] private Animator animator;
+    [SerializeField] private AudioClip munchSound = null;
     public GameObject sceneObjects;
 
     private int numOfObject;
@@ -19,10 +20,11 @@ public class Drop : MonoBehaviour
     {
         Destroy(selection);
 
+        animator.SetTrigger("Eat");
         numOfObject--;
+        AudioController.Instance.PlayRandomSfx(munchSound);
         if (numOfObject <= 0)
         {
-            Debug.Log("Bravo esti");
             // Load next scene or display dialogue
             animator.Play("Anim_MomoStudyComplete");
             dialogue.InitializeDialogue();

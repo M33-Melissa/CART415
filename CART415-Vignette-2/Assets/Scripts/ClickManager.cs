@@ -5,6 +5,8 @@ using UnityEngine;
 public class ClickManager : MonoBehaviour
 {
     [SerializeField] private DialogueSystem dialogue;
+    [SerializeField] private AudioClip hissClip = null;
+
     private int numOfMonsters;
     private int numClicks = 0;
     private int waitTime = 2;
@@ -16,6 +18,7 @@ public class ClickManager : MonoBehaviour
 
     public void mouseDown(GameObject clickedObject)
     {
+        AudioController.Instance.PlayRandomSfx(1.2f, 1.5f, hissClip);
         StartCoroutine(HideEye(clickedObject));
         numClicks++;
     }

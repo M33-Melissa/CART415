@@ -693,6 +693,7 @@ GameObject:
   - component: {fileID: 1553010621}
   - component: {fileID: 1553010620}
   - component: {fileID: 1553010619}
+  - component: {fileID: 1553010622}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -787,6 +788,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1553010622}
+        m_TargetAssemblyTypeName: ButtonSound, Assembly-CSharp
+        m_MethodName: PlayPageTurnSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1553010620
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -825,6 +838,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1553010617}
   m_CullTransparentMesh: 0
+--- !u!114 &1553010622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1553010617}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e43a432399fde34b8020b6424f4d665, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pageSound: {fileID: 8300000, guid: 2265acba527ded54a9cb74d4b303de2f, type: 3}
 --- !u!114 &1711441878 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8809647955186208941, guid: bc189d97aef3ef347aae53fdff65a3af, type: 3}
@@ -979,42 +1005,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1590284499092225367, guid: bc189d97aef3ef347aae53fdff65a3af, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -37.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1590284499092225367, guid: bc189d97aef3ef347aae53fdff65a3af, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 82.20001
-      objectReference: {fileID: 0}
-    - target: {fileID: 1590284499267231011, guid: bc189d97aef3ef347aae53fdff65a3af, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -115.68
-      objectReference: {fileID: 0}
-    - target: {fileID: 1590284499267231011, guid: bc189d97aef3ef347aae53fdff65a3af, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 349.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 1590284499267231011, guid: bc189d97aef3ef347aae53fdff65a3af, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 85.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1590284499267231011, guid: bc189d97aef3ef347aae53fdff65a3af, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 128
-      objectReference: {fileID: 0}
-    - target: {fileID: 1590284499267231012, guid: bc189d97aef3ef347aae53fdff65a3af, type: 3}
-      propertyPath: m_FontData.m_FontSize
-      value: 37
-      objectReference: {fileID: 0}
-    - target: {fileID: 1590284499267231012, guid: bc189d97aef3ef347aae53fdff65a3af, type: 3}
-      propertyPath: m_FontData.m_LineSpacing
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 1590284499267231012, guid: bc189d97aef3ef347aae53fdff65a3af, type: 3}
-      propertyPath: m_FontData.m_Alignment
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1590284499276165522, guid: bc189d97aef3ef347aae53fdff65a3af, type: 3}
       propertyPath: m_Name
       value: DialogueCanvas
@@ -1181,3 +1171,60 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bc189d97aef3ef347aae53fdff65a3af, type: 3}
+--- !u!1001 &6656568650386922699
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6656568648734770087, guid: 2afd2e0072c5401498ff8b00e83fc6bb, type: 3}
+      propertyPath: m_Name
+      value: AudioController
+      objectReference: {fileID: 0}
+    - target: {fileID: 6656568648734770107, guid: 2afd2e0072c5401498ff8b00e83fc6bb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6656568648734770107, guid: 2afd2e0072c5401498ff8b00e83fc6bb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6656568648734770107, guid: 2afd2e0072c5401498ff8b00e83fc6bb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6656568648734770107, guid: 2afd2e0072c5401498ff8b00e83fc6bb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6656568648734770107, guid: 2afd2e0072c5401498ff8b00e83fc6bb, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6656568648734770107, guid: 2afd2e0072c5401498ff8b00e83fc6bb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6656568648734770107, guid: 2afd2e0072c5401498ff8b00e83fc6bb, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6656568648734770107, guid: 2afd2e0072c5401498ff8b00e83fc6bb, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6656568648734770107, guid: 2afd2e0072c5401498ff8b00e83fc6bb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6656568648734770107, guid: 2afd2e0072c5401498ff8b00e83fc6bb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6656568648734770107, guid: 2afd2e0072c5401498ff8b00e83fc6bb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2afd2e0072c5401498ff8b00e83fc6bb, type: 3}

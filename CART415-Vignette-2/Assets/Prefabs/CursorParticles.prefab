@@ -46,6 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sparklyParticleSystem: {fileID: 544967649052774294}
+  trailSound: {fileID: 8300000, guid: 2c2971357d4f89f448de1a850129bf19, type: 3}
 --- !u!114 &1306851013
 MonoBehaviour:
   m_ObjectHideFlags: 0

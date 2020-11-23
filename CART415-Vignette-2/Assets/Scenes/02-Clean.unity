@@ -800,15 +800,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8809647955186208941, guid: bc189d97aef3ef347aae53fdff65a3af, type: 3}
       propertyPath: DialogueList.Array.size
-      value: 4
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8809647955186208941, guid: bc189d97aef3ef347aae53fdff65a3af, type: 3}
       propertyPath: DialogueList.Array.data[2].Person
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8809647955186208941, guid: bc189d97aef3ef347aae53fdff65a3af, type: 3}
       propertyPath: DialogueList.Array.data[1].Person
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8809647955186208941, guid: bc189d97aef3ef347aae53fdff65a3af, type: 3}
       propertyPath: nextScene
@@ -816,23 +816,43 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8809647955186208941, guid: bc189d97aef3ef347aae53fdff65a3af, type: 3}
       propertyPath: DialogueList.Array.data[0].Dialogue
-      value: EVIL BEGONE! Nice work me! Now it's time to study...
+      value: 'EVIL BEGONE! Nice work me! '
       objectReference: {fileID: 0}
     - target: {fileID: 8809647955186208941, guid: bc189d97aef3ef347aae53fdff65a3af, type: 3}
       propertyPath: DialogueList.Array.data[1].Dialogue
-      value: I never remember anything I study... What am I going to do? Maybe...
+      value: Momo... I don't hear you cleaning up much!
       objectReference: {fileID: 0}
     - target: {fileID: 8809647955186208941, guid: bc189d97aef3ef347aae53fdff65a3af, type: 3}
       propertyPath: DialogueList.Array.data[2].Dialogue
-      value: Like mama always says, studying provides "food for thought"...
+      value: I didn't give you a broom for nothing you know.
       objectReference: {fileID: 0}
     - target: {fileID: 8809647955186208941, guid: bc189d97aef3ef347aae53fdff65a3af, type: 3}
       propertyPath: DialogueList.Array.data[3].Dialogue
-      value: Then... I just have to put food into my mind!
+      value: 'Don''t worry mama! My room is cleansed! '
       objectReference: {fileID: 0}
     - target: {fileID: 8809647955186208941, guid: bc189d97aef3ef347aae53fdff65a3af, type: 3}
       propertyPath: DialogueList.Array.data[4].Dialogue
-      value: 
+      value: I didn't even need the broom for that...
+      objectReference: {fileID: 0}
+    - target: {fileID: 8809647955186208941, guid: bc189d97aef3ef347aae53fdff65a3af, type: 3}
+      propertyPath: DialogueList.Array.data[5].Dialogue
+      value: One quest done, another to go. Now, it's time to study!
+      objectReference: {fileID: 0}
+    - target: {fileID: 8809647955186208941, guid: bc189d97aef3ef347aae53fdff65a3af, type: 3}
+      propertyPath: DialogueList.Array.data[6].Dialogue
+      value: I never remember anything I study... What am I going to do? Maybe...
+      objectReference: {fileID: 0}
+    - target: {fileID: 8809647955186208941, guid: bc189d97aef3ef347aae53fdff65a3af, type: 3}
+      propertyPath: DialogueList.Array.data[7].Dialogue
+      value: 'Like mama says sometimes:'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8809647955186208941, guid: bc189d97aef3ef347aae53fdff65a3af, type: 3}
+      propertyPath: DialogueList.Array.data[8].Dialogue
+      value: '"Studying provides food for thought!"'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8809647955186208941, guid: bc189d97aef3ef347aae53fdff65a3af, type: 3}
+      propertyPath: DialogueList.Array.data[9].Dialogue
+      value: Then... I just have to put food into my mind!
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bc189d97aef3ef347aae53fdff65a3af, type: 3}
@@ -1350,6 +1370,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue: {fileID: 1020333961}
+  hissClip: {fileID: 8300000, guid: 2ce14f59a5d27664f824f27e3ae271b9, type: 3}
 --- !u!1 &1634119166
 GameObject:
   m_ObjectHideFlags: 0

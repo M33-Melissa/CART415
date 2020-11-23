@@ -9,4 +9,5 @@ public class WandCursor : MonoBehaviour
     {
         Cursor.SetCursor(wand, Vector2.zero, CursorMode.ForceSoftware);
     }
+
 }

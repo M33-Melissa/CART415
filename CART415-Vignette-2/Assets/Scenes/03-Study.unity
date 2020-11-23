@@ -273,6 +273,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1306851013, guid: 0070833477e5dd44884447bb0ecb0338, type: 3}
+      propertyPath: wand
+      value: 
+      objectReference: {fileID: 2800000, guid: d2ce60fbfd2f7e6479440123c098a1db, type: 3}
     - target: {fileID: 544967646997826733, guid: 0070833477e5dd44884447bb0ecb0338, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -317,6 +321,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 544967646997826734, guid: 0070833477e5dd44884447bb0ecb0338, type: 3}
+      propertyPath: trailSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 2c2971357d4f89f448de1a850129bf19, type: 3}
     - target: {fileID: 544967646997826735, guid: 0070833477e5dd44884447bb0ecb0338, type: 3}
       propertyPath: m_Name
       value: CursorParticles
@@ -1451,7 +1459,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8809647955186208941, guid: bc189d97aef3ef347aae53fdff65a3af, type: 3}
       propertyPath: DialogueList.Array.size
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8809647955186208941, guid: bc189d97aef3ef347aae53fdff65a3af, type: 3}
       propertyPath: DialogueList.Array.data[2].Person
@@ -1564,7 +1572,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -2
-  m_Sprite: {fileID: 21300000, guid: bfed19bd16a9fed4982ef6dc56cbbc4e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 09baefd9584e3df499773d1c22a739ab, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1605,6 +1613,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue: {fileID: 1042407960}
   animator: {fileID: 1118813825}
+  munchSound: {fileID: 8300000, guid: b32728fa6f2753b40b754db26d6fed0a, type: 3}
   sceneObjects: {fileID: 569097351}
 --- !u!95 &1118813825
 Animator:
